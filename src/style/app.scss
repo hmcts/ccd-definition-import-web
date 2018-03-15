@@ -1,0 +1,54 @@
+$path: "/assets/";
+
+@import "~govuk-elements-sass/public/sass/_govuk-elements.scss";
+
+$fa-font-path: "/node_modules/font-awesome/fonts";
+$govuk-frontend-toolkit-image-path: "/assets";
+$govuk-template-image-path: "/assets";
+$pdk-image-path: "/assets";
+$nta-font-path: "/node_modules/@govuk/platform-template/assets/fonts";
+
+@import "~@govuk/platform-template/platform-template";
+
+// PDK's footer fix
+#footer .footer-meta {
+
+  .footer-meta-inner .open-government-licence .logo a {
+    background: url('#{$govuk-template-image-path}/open-government-licence.png') no-repeat;
+  }
+
+}
+
+pre.error-message {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.descr {
+  margin-bottom: 11px;
+}
+
+.choseBtn {
+  line-height: 0;
+  width: 700px;
+}
+
+.def-error {
+  margin-bottom: 18px;
+}
+
+.def-succ {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+
+  // Add bottom margin when column are stacked up
+  [class*="col-md"] {
+    margin-bottom: 30px;
+  }
+
+}

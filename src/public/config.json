@@ -1,0 +1,7 @@
+{
+  "login_url": "https://localhost:3501/login",
+  "logout_url": "http://localhost:3453/logout",
+  "definition_import_url": "http://localhost:3453/definition_import",
+  "oauth2_token_endpoint_url": "http://localhost:3453/oauth2",
+  "oauth2_client_id": "ccd_gateway"
+}

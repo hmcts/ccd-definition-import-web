@@ -1,28 +1,18 @@
 # case-definition-import-web
 
-An Angular front-end for importing case definition spreadsheets in Core Case Data.
-See the [case definition templates](https://git.reform.hmcts.net/case-management/case-definition-templates) for example of `.xlsx` spreadsheets that can be imported.
+An Angular front-end for importing case definition templates in Core Case Data.
 
-Built by [Common Components](https://tools.hmcts.net/confluence/display/RCC/Reform%3A+Common+Components+Home)' [Core Case Data](https://tools.hmcts.net/confluence/display/RCCD/Reform%3A+Core+Case+Data+Home) project.
-
-### Quick start
+## Quick start
 
 ```bash
-# clone our repo
-$ git clone https://git.reform.hmcts.net/case-management/case-definition-import-web.git
-
-# change directory to your app
-$ cd case-definition-import-web
-
-# install the dependencies with npm
-$ npm install
-
-# start the development server
-$ npm start
+git clone https://github.com/hmcts/ccd-definition-import-web.git
+cd ccd-definition-import-web
+yarn install
+yarn start
 ```
 go to [http://localhost:3452/import](http://localhost:3452/import) in your browser to start importing.
 
-# Table of Contents
+## Table of Contents
 
 * [Getting Started](#getting-started)
     * [Dependencies](#dependencies)
@@ -32,89 +22,74 @@ go to [http://localhost:3452/import](http://localhost:3452/import) in your brows
     * [Production](#production)
     * [Documentation](#documentation)
     * [Seed](#seed)
-* [Roadmap](#roadmap)
-    * [MVP](#mvp)
-* [Environments](#environments)
+* [License](#license)
 
-# Getting Started
+## Getting Started
 
-## Dependencies
+### Dependencies
 
 What you need to run this app:
-* `node` and `npm` (Use [NVM](https://github.com/creationix/nvm))
+* `node` and `yarn`
 * Ensure you're running Node (`v6.x.x`+) and NPM (`3.x.x`+)
 * **IdAM service** (key `login_url` in `src/public/config.json`)
 * **CCD API Gateway** instance (key `api_url` in `src/public/config.json`)
 * **CCD Definition Store app** (through API Gateway)
 
-## Installing
+### Installing
 
 * `clone` the repository
-* `npm install` to install all dependencies
+* `yarn install` to install all dependencies
 
-## Developing
+### Developing
 
 After you have installed all dependencies you can now start developing with:
 
-* `npm start`
+* `yarn start`
 
 It will start a local server using `webpack-dev-server` which will watch, build (in-memory), and reload for you. The application can be checked at `http://localhost:3452`.
 
 As an alternative, you can work using Hot Module Replacement (HMR):
 
-* `npm run start:hmr`
+* `yarn start:hmr`
 
 And you are all set! You can now modify your components on the fly without having to reload the entire page.
 
-## Testing
+### Testing
 
 #### 1. Unit Tests
 
-* single run: `npm test`
-* live mode (TDD style): `npm run test-watch`
+* single run: `yarn test`
+* live mode (TDD style): `yarn test-watch`
 
 #### 2. End-to-End Tests (aka. e2e, integration)
 
 * single run:
-  * in a tab, *if not already running!*: `npm start`
-  * in a new tab: `npm run webdriver-start`
-  * in another new tab: `npm run e2e`
+  * in a tab, *if not already running!*: `yarn start`
+  * in a new tab: `yarn webdriver-start`
+  * in another new tab: `yarn e2e`
 * interactive mode:
-  * instead of the last command above, you can run: `npm run e2e-live`
+  * instead of the last command above, you can run: `yarn e2e-live`
   * when debugging or first writing test suites, you may find it helpful to try out Protractor commands without starting up the entire test suite. You can do this with the element explorer.
   * you can learn more about [Protractor Interactive Mode here](https://github.com/angular/protractor/blob/master/docs/debugging.md#testing-out-protractor-interactively)
 
-## Production
+### Production
 
 To build your application, run:
 
-* `npm run build`
+* `yarn build`
 
 You can now go to `/dist` and deploy that to your server!
 
-## Documentation
+### Documentation
 
 You can generate api docs (using [TypeDoc](http://typedoc.org/)) for your code with the following:
 
-* `npm run docs`
+* `yarn docs`
 
-## Seed
+### Seed
 
 This project is based on the [angular-webpack](https://github.com/preboot/angular-webpack) seed.
 
-# Roadmap
+## License
 
-Complete roadmap: https://tools.hmcts.net/confluence/display/RCCD/Roadmap+of+Features+and+Priority
-
-## MVP
-*Complete features: https://tools.hmcts.net/confluence/display/RCCD/MVP*
-
-## Environments
-
-| Environment  | Status | URL         |
-| ------------ | ------ | ----------- |
-| Development | :white_check_mark: | https://case-definition-web.dev.ccd.reform.hmcts.net |
-| Test | :white_check_mark: | https://case-definition-web.test.ccd.reform.hmcts.net |
-| Demo  | :red_circle: | https://admin.demo.ccd.reform.hmcts.net |
-| Stage  | :red_circle: | https://admin.stage.ccd.reform.hmcts.net |
-| Production  | :red_circle: | https://admin.ccd.reform.hmcts.net |
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.

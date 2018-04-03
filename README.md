@@ -1,4 +1,4 @@
-# case-definition-import-web
+# case-definition-import-web [![Build Status](https://travis-ci.org/hmcts/ccd-definition-import-web.svg?branch=master)](https://travis-ci.org/hmcts/ccd-definition-import-web)
 
 An Angular front-end for importing case definition templates in Core Case Data.
 

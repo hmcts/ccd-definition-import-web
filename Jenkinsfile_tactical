@@ -59,7 +59,7 @@ lock(resource: "case-definition-import-web-${env.BRANCH_NAME}", inversePrecedenc
                 milestone()
             }
         } catch (err) {
-            notifyBuildFailure channel: '#ccd-notifications'
+            //notifyBuildFailure channel: '#ccd-notifications'
             throw err
         }
     }
